@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500");
+
+body{
+    width: 100%;
+    height: 0 auto;
+    font-family: "Quicksand", sans-serif;
+    
+}
+
+#cadastro{
+    width: 100%;    
+}
+#cadastro .container{
+    display: flex;
+    justify-content: center;
+}
+
+#formCadastro{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    outline: none;
+    border:none;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color:rgba(228, 129, 129, 0.644)
+}
