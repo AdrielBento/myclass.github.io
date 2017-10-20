@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500");
+
+body {
+  width: 100%;
+  height:700px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+  width: 50%;
+  align-items: center;
+  position: relative;
+}
+
+label {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  border-radius: 20px;
+  width: 25em;
+  height: 2em;
+  color: rgb(65, 65, 65);
+  background-color: white;
+}
+
+input:focus {
+  border: 2px solid #f22bcb;
+}
+button {
+  width: 20em;
+  outline: none;
+  border-radius: 40px;
+  height: 3em;
+  background-color: #f22bcb;
+  border: 0em;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.32), 0 2px 8px 0 rgba(0, 0, 0, 0.34);
+  cursor: pointer;
+}
+button:active {
+  background-color: #712bf2;
+}
+
+#gradiente {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/img/fundoCadastro.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sectionForm {
+  width: 100%;
+  height: 100%;
+}
+.sectionForm .container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.logoImg {
+  width: 10%;
+  height: 20%;
+}
+.logoImg img {
+  width: 50%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+}
+
+.sideBar{
+    width: 5%;
+    height: 100%;
+    background-color: #f22bd4;
+    margin-bottom: 1px;
+    color:white;
+    
+}

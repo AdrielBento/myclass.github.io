@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/cadastro.css">
+      <link rel="stylesheet" href="assets/css/style.css">
     <title>MyClass</title>
 </head>
+
 <body>
-        <section id="login">
-                <div class="container">
-                    <form id="formLogin">
-        
-                        <label for="password">Nome</label>
-                        <input type="text" name="nome">
-                        <label for="password">Email</label>
-                        <input type="email" name="email">
-                        <label for="password">Password</label>
-                        <input type="password" name="password">
-                        <button type="button" id="cadastrar">Logar</button>
-        
-                    </form>
-                </div>
-            </section>
+    <div id="gradiente">
+        <section id="login" class="sectionForm">
 
+            <div class="container">
+                <form class="form" id="formLogin" >
 
-        <script src="assets/js/jquery.js"></script>
-        <script src="assets/js/cadastro.js"></script>
+                    <label for="email"> Email
+                        <input type="email" name="email" id="email" >
+                    </label>
+
+                    <label for="password">Password
+                        <input type="password" name="password" id="password">
+                    </label>
+
+                    <button type="button" id="logar">Logar</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
+
 </html>
