@@ -1,4 +1,7 @@
 body{
     display: flex;
+    position: relative;
+    height:700px
 
 }
+

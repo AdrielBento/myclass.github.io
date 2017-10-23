@@ -4,28 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">    
+    <link rel="icon" href="assets/img/logo2.png">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/bulma-0.6.0/css/bulma.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>MyClass</title>
 </head>
 
 <body>
+    <nav class="nav-bar">
+        <ul>
+            <li class="logo">
+                <img src="assets/img/logo.png" alt="logo">
+            </li>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Sobre</a>
+            </li>
+            <li>
+                <a href="">Contato</a>
+            </li>
 
-      <div id="gradiente">
+        </ul>
 
-            <!-- <header>
-                    <div class="imgLogo">
-                        <img src="assets/img/LOGO-BRANCO.png" alt="">
-                    </div>
-            
-                </header> -->
+        <a href="login.html">
+            <button type="button" class="btn btn-media">
+                Login
+            </button>
+        </a>
 
-        <section id="cadastro" class="sectionForm">
+    </nav>
+
+
+    <div id="gradiente">
+
+        <section id="cadastro" class="sectionForm cadastro">
 
             <div class="container">
-                <form class="form" id="formCadastro" >
+                    <h1 class="title is-1">Cadastro</h1>
+                    <hr>
+                <form class="form" id="formCadastro">
 
-                    <label for="password"> Nome
+                    <label for="password">
+                        <!-- <i class="fa fa-user" aria-hidden="true"></i>  -->
+                        Nome
                         <input type="text" name="nome">
                     </label>
 
@@ -37,11 +62,16 @@
                         <input type="password" name="password">
                     </label>
 
-                    <button type="button" id="cadastrar">Cadastrar</button>
+                    <button type="button" id="cadastrar" class="btn btn-large">
+                        <!-- <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>                 -->
+                        <span id="btn-cadastrar">Cadastrar</span>
+                    </button>
 
                 </form>
             </div>
         </section>
+
+
 
     </div>
     <script src="assets/js/jquery.js"></script>

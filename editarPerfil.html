@@ -4,45 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/logo2.png">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/editarPerfil.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="assets/mdl/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   
     <title>MyClass</title>
 </head>
 
 <body>
-    <section class="sideBar">
-            <i class="fa fa-home fa-4x" aria-hidden="true"></i>
-    </section>
+    <div class="mdl-layout mdl-js-layout tamFont ">
+        <div class="mdl-layout__drawer tamFont sidebarr">
+            <span class="mdl-layout-title"></span>
+            <nav class="mdl-navigation">
 
-    <div id="gradiente">
-        <section id="editar" class="sectionForm">
+                <a class="mdl-navigation__link" href="">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> Perfil</a>
+                <a class="mdl-navigation__link" href="">
+                    <i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                <a class="mdl-navigation__link" href="">
+                    <i class="fa fa-comments" aria-hidden="true"></i> Salas</a>
+                <a class="mdl-navigation__link" href="">
+                    <i class="fa fa-users" aria-hidden="true"></i> Grupos</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
 
-            <div class="container">
-                <form class="form" id="formEditar">
+            <div id="gradiente">
+                <section id="editar" class="sectionForm editarPerfil">
 
-                    <label for="nome"> Nome
-                        <input type="text" name="nome" id="nome">
-                    </label>
+                    <div class="container">
+                        <h1>Editar</h1>
+                        <hr>
+                        <form class="form" id="formCadastro">
 
-                    <label for="email"> Email
-                            <input type="email" name="email" id="email" >
-                        </label>
-    
-                        <label for="password">Password
-                            <input type="password" name="password" id="password">
-                        </label>
+                            <label for="password">
+                                <!-- <i class="fa fa-user" aria-hidden="true"></i>  -->
+                                Nome
+                                <input type="text" name="nome">
+                            </label>
 
-                    <button type="button" id="editar">Editar</button>
+                            <label for="password"> Email
+                                <input type="email" name="email">
+                            </label>
 
-                </form>
-            </div>
-        </section>
+                            <label for="password">Password
+                                <input type="password" name="password">
+                            </label>
 
-    </div>
+                            <button type="button" id="cadastrar" class="btn btn-large">
+                                <!-- <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>                 -->
+                                <span id="btn-cadastrar">Editar</span>
+                            </button>
 
+                        </form>
+                </section>
+
+                </div>
+
+        </main>
+        </div>
+
+
+
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/menu.js"></script>
+        <script src="assets/mdl/material.min.js"></script>
 </body>
 
 </html>

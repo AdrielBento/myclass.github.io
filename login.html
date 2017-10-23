@@ -4,27 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/logo2.png">
     <link rel="stylesheet" href="assets/css/reset.css">
-      <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/mdl/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/bulma-0.6.0/css/bulma.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <title>MyClass</title>
+
+
 </head>
 
 <body>
+    <nav class="nav-bar">
+        <ul>
+            <li class="logo">
+                <img src="assets/img/logo2.png" alt="logo">
+            </li>
+            <li>Home</li>
+            <li>Sobre</li>
+            <li>Contato</li>
+
+        </ul>
+
+        <a href="cadastro.html"><button type="button" class="btn btn-media">Cadastre-se</button></a>
+
+    </nav>
+
     <div id="gradiente">
-        <section id="login" class="sectionForm">
+        <section id="login" class="sectionForm login">
 
             <div class="container">
-                <form class="form" id="formLogin" >
+                    <h1 class="title is-1">Login</h1>
+          
+                <hr>
+                <form class="form" id="formLogin">
 
                     <label for="email"> Email
-                        <input type="email" name="email" id="email" >
+                        <input type="email" name="email" id="email">
                     </label>
 
                     <label for="password">Password
                         <input type="password" name="password" id="password">
                     </label>
 
-                    <button type="button" id="logar">Logar</button>
+                    <button type="button" id="logar" class="btn btn-large">
+                        <span id="btn-logar"> Logar</span>
+                    </button>
+                
+                  
                 </form>
             </div>
         </section>
@@ -32,6 +61,8 @@
     </div>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/login.js"></script>
+    <script src="assets/mdl/material.min.js"></script>
+
 </body>
 
 </html>
