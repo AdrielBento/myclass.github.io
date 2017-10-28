@@ -1,12 +1,10 @@
-var letra = $(".letraMenu");
-var arrow = $(".link-arrow");
-var iconArrow =$(".icon-arrow");
+$("#hamburger").click(function() {
+     $(".menu").css({ left: "0%" });
+    $("#hamburger").hide();
 
-letra.hide();
+});
 
-arrow.click(function() {
-  event.preventDefault();
-  letra.toggle();
-  iconArrow.toggleClass("fa-bars");
-  iconArrow.toggleClass("fa-times")
+$("#closeIcon").click(function() {
+    $(".menu").css({ left: "-100%" });
+    $("#hamburger").show(200);
 });
