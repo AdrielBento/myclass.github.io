@@ -19,7 +19,7 @@ body {
 
 .views{
     width:100%;
-    height: 100%;
+    height: 570px;
     display: flex;      
 }
 .viewsOpcoes{
@@ -28,7 +28,19 @@ body {
     height: 100%;
 }
 .feedSala{
+  position: relative;
     width:100%;
     height: 100%;
-    background-color: gray;
+    background-color: rgb(231, 229, 229);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#boxSend{
+  width:90%;
+  height: 3em;
+  background-color: white;
+  border-radius:50px;
+  display: flex;
 }

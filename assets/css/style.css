@@ -27,7 +27,7 @@ label {
   width: 100%;
   flex-direction: column;
 }
-input {
+.btn-pink {
   outline: none;
   border: none;
   text-decoration: none;
@@ -126,6 +126,7 @@ main {
   margin-top: 1em;
   cursor: pointer;
 }
+
 .menu {
   width: 15%;
   height: 100%;
@@ -134,9 +135,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  left: -100%;
-  transition-timing-function: ease-in-out;  
-  transition-duration: 0.6s;
+  transform: translate(-200px);
+  transition-property: transform;
+  transition-duration: .2s;  
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
   align-items: flex-end;
   color: white;
 }

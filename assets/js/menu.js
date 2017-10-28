@@ -1,10 +1,12 @@
 $("#hamburger").click(function() {
-     $(".menu").css({ left: "0%" });
+   
+    $(".menu").css({ "transform": "translate(0px)" });
     $("#hamburger").hide();
 
 });
 
 $("#closeIcon").click(function() {
-    $(".menu").css({ left: "-100%" });
+  
+    $(".menu").css({ "transform": "translate(-200px)" });
     $("#hamburger").show(200);
 });

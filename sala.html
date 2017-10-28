@@ -16,44 +16,58 @@
 </head>
 
 <body>
-    <div class="mdl-layout mdl-js-layout tamFont ">
-        <div class="mdl-layout__drawer tamFont sidebarr">
-            <span class="mdl-layout-title"></span>
-            <nav class="mdl-navigation">
-
-                <a class="mdl-navigation__link" href="">
-                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> Perfil</a>
-                <a class="mdl-navigation__link" href="">
-                    <i class="fa fa-home" aria-hidden="true"></i> Home</a>
-                <a class="mdl-navigation__link" href="">
-                    <i class="fa fa-comments" aria-hidden="true"></i> Salas</a>
-                <a class="mdl-navigation__link" href="">
-                    <i class="fa fa-users" aria-hidden="true"></i> Grupos</a>
-            </nav>
+    <div id="gradiente">
+        <div id="hamburger">
+            <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
-        <main class="mdl-layout__content">
-            <div class="tituloSala">
-                <span id="nomeSala">Engenharia de Software</span>
-
+        <section class="menu">
+            <div id="closeIcon">
+                <i class="fa fa-times" aria-hidden="true"></i>
             </div>
-            <section class="views">
+            <div class="sideBar">
+                <ul>
+                    <li id="logoMenu">
+                        <div class="sideBarLogo">
+                            <img src="assets/img/logo2.png" alt="logo">
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i> Perfil</li>
+                    <li>
+                        <i class="fa fa-home" aria-hidden="true"></i> Home</li>
+                    <li>
+                        <i class="fa fa-comments" aria-hidden="true"></i> Salas</li>
+                    <li>
+                        <i class="fa fa-users" aria-hidden="true"></i> Grupos</li>
+                </ul>
+            </div>
+        </section>
+        <div class="tituloSala">
+            <span id="nomeSala">Engenharia de Software</span>
+        </div>
+        <section class="views">
+            <section class="feedSala">
+               <div id="boxSend">
+                   <input type="text">
+                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                    <i class="fa fa-upload" aria-hidden="true"></i>
+                    
 
-
-                <section class="feedSala">
-                    dawdawd
-                </section>
-
-
-                <section class="viewsOpcoes">
-                    adawdawd
-                </section>
+               </div>
 
             </section>
-        </main>
 
-        <script src="assets/js/jquery.js"></script>
-        <script src="assets/js/menu.js"></script>
-        <script src="assets/mdl/material.min.js"></script>
+
+            <section class="viewsOpcoes">
+                adawdawd
+            </section>
+
+        </section>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/mdl/material.min.js"></script>
 </body>
 
 </html>
