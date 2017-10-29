@@ -37,7 +37,7 @@ label {
   color: rgb(65, 65, 65);
   background-color: white;
 }
-input:focus {
+.btn-pink:focus {
   border: 2px solid #f22bcb;
 }
 .btn {
