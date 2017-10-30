@@ -59,7 +59,7 @@ body {
 #boxSend i:hover {
   background-color: rgb(48, 204, 142);
 }
-#boxSend label i{
+#boxSend label i {
   border-radius: 0px 50px 50px 0px;
   padding: 0.72em;
 }
@@ -99,17 +99,18 @@ body {
 }
 
 .postModel {
-  width: 40em;
+  width: 55em;
   height: auto;
-  max-height: 11em;
-  min-height: 10em;
+  max-height: 25em;
+  /* min-height: 15em; */
   background-color: rgb(255, 255, 255);
   margin-top: 2em;
-  border-radius: 0px 50px 30px;
+  padding: 1em;
+  /* border-radius: 0px 50px 30px; */
   display: flex;
   flex-direction: column;
   color: rgb(141, 139, 139);
-  overflow: auto;
+  /* overflow: auto; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .divParagrafo {
@@ -119,6 +120,7 @@ body {
   flex-direction: column;
   align-items: center;
   color: rgb(19, 18, 18);
+  word-wrap: break-word;
 }
 .divParagrafo p {
   width: 90%;
@@ -134,8 +136,7 @@ input[type="file"] {
   display: none;
   cursor: pointer;
 }
-.labelUpload {
-}
+
 #msgArquivo {
   background-color: rgb(48, 204, 142);
   color: white;
@@ -146,20 +147,37 @@ input[type="file"] {
   text-align: center;
   line-height: 2em;
 }
-.iCloseFile{
-color:red;
-padding-left:1em; 
-cursor: pointer;
-
+.iCloseFile {
+  color: red;
+  padding-left: 1em;
+  cursor: pointer;
 }
-#notice{ 
+#notice {
   color: white;
   text-align: center;
   width: 83%;
-  border-radius: 50px 50px 0px 0px;
+  /* border-radius: 50px 50px 0px 0px; */
   min-height: 2em;
   line-height: 2em;
 }
-.invisivel{
+.invisivel {
   display: none;
+}
+hr {
+  width: 90%;
+  background-color: rgb(201, 201, 201);
+  border: 0px;
+  height: 0.2em;
+}
+
+.arquivoPost{
+  width: auto;
+  max-width: 100%;
+  height:auto;
+  padding: 1em;
+  margin-left: 2em;
+  background-color: rgb(255, 255, 255);
+  font-size: 1em;
+  color:rgb(48, 204, 142);
+
 }

@@ -7,6 +7,6 @@ $("#hamburger").click(function() {
 
 $("#closeIcon").click(function() {
   
-    $(".menu").css({ "transform": "translate(-200px)" });
+    $(".menu").css({ "transform": "translate(-220px)" });
     $("#hamburger").show(200);
 });
