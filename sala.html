@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/sala.css">
-    <title>Document</title>
+    <title>Sala</title>
 </head>
 
 <body>
@@ -29,13 +29,17 @@
                             <img src="assets/img/logo2.png" alt="logo">
                         </div>
                     </li>
-                    <li>
-                        <i class="fa fa-user-circle-o" aria-hidden="true"></i> Perfil</li>
+                    <a href="editarPerfil.html">
+                        <li>
+                            <i class="fa fa-user-circle-o" aria-hidden="true"></i> Perfil</li>
+                    </a>
                     <li>
                         <i class="fa fa-home" aria-hidden="true"></i> Home</li>
-                    <li>
+                    <a href="sala.html">
+                        <li>
                         <i class="fa fa-comments" aria-hidden="true"></i> Salas</li>
-                    <li>
+                    </a>
+                        <li>
                         <i class="fa fa-users" aria-hidden="true"></i> Grupos</li>
                 </ul>
             </div>
@@ -47,22 +51,27 @@
             <section class="feedSala">
                 <div id="posts">
                     <!-- postagens -->
+
                     <div class="postModel">
-                        <span class="NomeEData">Adriel - 12:26</span>
-                        <div class="divParagrafo">
-                            <p>Caros Alunos da Disciplina de Estrutura de Dados - noite,                                
-                                Por motivos particulares não haverá aula no dia de hoje (30/10).                                
-                                Vocês devem continuar o desenvolvimento do Trabalho Prático II e qualquer dúvida enviar e-mail.                                
-                                Na quarta-feira (01/11) a aula será na sala para trabalharmos o conceito de Recursividade.                       
-                                Observação: Para os alunos da disciplina de Tópicos em Análise e Desenvolvimento de Sistemas - tarde, aula normal no dia de hoje (30/10).
-                            </p>
-                        </div>    
-                        <hr>                  
-                        <div class="arquivoPost">                            
-                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-                            <span id="nomeArq"></span>
+                        <div id="postAll">
+                            <span class="NomeEData">Adriel - 12:26</span>
+                            <div class="divParagrafo">
+                                <p>Caros Alunos da Disciplina de Estrutura de Dados - noite, Por motivos particulares não haverá
+                                    aula no dia de hoje (30/10). Vocês devem continuar o desenvolvimento do Trabalho Prático
+                                    II e qualquer dúvida enviar e-mail. Na quarta-feira (01/11) a aula será na sala para
+                                    trabalharmos o conceito de Recursividade. Observação: Para os alunos da disciplina de
+                                    Tópicos em Análise e Desenvolvimento de Sistemas - tarde, aula normal no dia de hoje
+                                    (30/10).
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="arquivoPost">
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                <span id="nomeArq">Banco de dados.pdf</span>
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <div id="msgArquivo">
 
@@ -76,13 +85,22 @@
                 </div>
                 <div id="boxSend">
                     <textarea class="btnBoxSend" autofocus></textarea>
-                    <input type="file" name="upload" id="upload">
+                    <!-- <input type="file" name="upload" id="upload">
                     <i class="fa fa-paper-plane-o" aria-hidden="true" id="send"></i>
                     <label for="upload">
-
                         <i class="fa fa-upload" aria-hidden="true"></i>
-                    </label>
-
+                    </label> -->
+                    <input type="file" name="upload" id="upload">
+                    <div class="menuBar">
+                        <div class="btn-bar">
+                            <i class="fa fa-paper-plane-o" aria-hidden="true" id="send"></i>
+                        </div>
+                        <div class="btn-bar">
+                            <label for="upload">
+                                <i class="fa fa-upload" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                    </div>
                 </div>
 
             </section>

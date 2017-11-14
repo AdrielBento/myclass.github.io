@@ -29,7 +29,7 @@ body {
   /* height: 100%; */
 }
 .feedSala {
-  width: 100%;
+  width: 70%;
   /* height: 100%; */
   background-color: rgb(231, 229, 229);
   display: flex;
@@ -49,20 +49,20 @@ body {
   box-sizing: border-box;
   /* overflow: auto; */
 }
-#boxSend i {
+/* #boxSend i {
   font-size: 200%;
   background-color: rgb(41, 163, 116);
   color: white;
   padding: 20px;
   cursor: pointer;
-}
-#boxSend i:hover {
+} */
+/* #boxSend i:hover {
   background-color: rgb(48, 204, 142);
-}
-#boxSend label i {
+} */
+/* #boxSend label i {
   border-radius: 0px 50px 50px 0px;
   padding: 0.72em;
-}
+} */
 #boxSend label {
   /* padding: 21px; */
   width: auto;
@@ -99,31 +99,35 @@ body {
 }
 
 .postModel {
-  width: 55em;
+  width: 75%;
   height: auto;
-  max-height: 25em;
-  /* min-height: 15em; */
   background-color: rgb(255, 255, 255);
-  margin-top: 2em;
   padding: 1em;
-  /* border-radius: 0px 50px 30px; */
-  display: flex;
-  flex-direction: column;
   color: rgb(141, 139, 139);
-  /* overflow: auto; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:2em;
+  /* overflow: auto; */
+  /* border-radius: 0px 50px 30px; */
+  /* display: flex; */
+  /* margin-top: 2em; */
+  /* max-height: 25em; */
+  /* min-height: 5em; */
+  /* max-width: 75%; */
+  /* flex-direction: column; */
 }
 .divParagrafo {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height:auto;
+  text-align: justify;
   color: rgb(19, 18, 18);
   word-wrap: break-word;
+  margin-top: 1em;
+  /* padding-left: 0.5em; */
 }
 .divParagrafo p {
-  width: 90%;
+  /* width: 90%; */
+  margin: 0px;
+  padding: 1em;
 }
 .NomeEData {
   margin: 0.5em;
@@ -170,14 +174,42 @@ hr {
   height: 0.2em;
 }
 
-.arquivoPost{
+.arquivoPost {
   width: auto;
   max-width: 100%;
-  height:auto;
+  height: auto;
   padding: 1em;
   margin-left: 2em;
   background-color: rgb(255, 255, 255);
   font-size: 1em;
-  color:rgb(48, 204, 142);
-
+  color: rgb(48, 204, 142);
+  word-wrap: break-word;
+}
+.menuBar {
+  display: flex;
+  width: 15%;
+}
+.btn-bar {
+  background-color: rgb(48, 204, 142);
+  color: white;
+  width: 3em;
+  height: 100%;
+  font-size: 2em;
+}
+.btn-bar i {
+  height: 100%;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn-bar i:hover {
+  background-color: rgb(101, 216, 170);
+  /* border-radius: 0px 50px 50px 0px; */
+}
+#postAll {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
 }

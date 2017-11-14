@@ -85,6 +85,12 @@ a:visited {
   background-position: center;
   background-size: cover;
 }
+#gradiente #homePerfil {
+  background-image: url(../../assets/img/fundoEditar-min.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .sectionForm {
   width: 100%;
@@ -203,7 +209,7 @@ main {
 .nav-bar {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 6em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -222,21 +228,25 @@ main {
 }
 
 .nav-bar ul li {
-  display: inline-block;
+  display: inline-block;  
+  padding-left: 2em;  
+  width: 5em;  
+  text-align: center;  
+  padding-top: 1em;
 }
 
 .logo {
   width: 20%;
 }
 .logo img {
-  width: 100%;
+  width: 50%;
 }
 .sideBarLogo {
   display: flex;
   justify-content: center;
 }
 .sideBarLogo img {
-  max-width: 60%;
+  max-width: 80%;
 }
 .btn-media {
   width: 10em;
