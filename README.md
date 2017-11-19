@@ -103,3 +103,6 @@ Uma possível aplicação a ser desenvolvida é a seguinte:
 > *comentários*. Leitores podem visualizar os *posts* existentes em uma *categoria* e
 > fazer comentários nos *posts*. Para melhorar a qualidade do blog, os *posts* escritos
 > pelo administrador podem receber tags HTML em seu conteúdo.
+
+
+## http://myclass.github.io
