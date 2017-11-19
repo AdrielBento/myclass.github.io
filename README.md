@@ -105,4 +105,4 @@ Uma possível aplicação a ser desenvolvida é a seguinte:
 > pelo administrador podem receber tags HTML em seu conteúdo.
 
 
-## http://myclass.github.io
+## SITE :  https://adrielbento.github.io/myclass.github.io/
