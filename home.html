@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/logo2.png">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <section id="busca">
+
+        <header>
+
+            <video src="assets/video/Writing-Working.mp4" id="background" autoplay="true" loop="true"></video>
+        </header>
+        <div id="gradient-Background"></div>
+
+        <nav>
+            <ul>
+                <li class="logo">
+                   <a href="home.html"> <img src="assets/img/logo2.png" alt="logo"></a>
+                </li>
+                <li><a href="sala.html">Salas</a></li>
+                <li>Perfil</li>
+            </ul>
+            <button id="btn-logout">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                logout</button>
+        </nav>
+        <div class="container">
+            <h1>Encontre sua Sala 🎓📚</h1>
+            <div id="barBusca">
+                <input type="text" id="inputBusca" placeholder="digite o apelido da sala....">
+                <button id="btn-busca">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="salasBuscadas">
+        <div class="container">
+            <div class="cardSala">
+                <div class="infoSala">
+                    <h6>UFPR-</h6>
+                    <H6> Analise e desenvolvimento de sitemas</H6>
+                </div>
+                <h1>NOME DA SALA</h1>
+                <button class="btn-entrar">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                    Entrar</button>
+            </div>
+            <div class="cardSala">
+                <div class="infoSala">
+                    <h6>UFSC-</h6>
+                    <H6> Engenharia da Computação</H6>
+                </div>
+                <h1>NOME DA SALA</h1>
+                <button class="btn-entrar">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                    Entrar</button>
+            </div>
+        </div>
+
+        <div id="linkCriarSala">
+            <h1>Não acho nenhuma sala interssante 🙁?Crie a sua.</h1>
+            <button id="btn-criarSala">CRIAR SALA</button>
+        </div>
+
+
+    </section>
+</body>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/main.js"></script>
+
+</html>
