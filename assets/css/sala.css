@@ -4,9 +4,12 @@
 body {
   overflow-x: hidden;
 }
-
-nav {
-  position: relative !important;
+a:visited {
+  color: var(--corPrincipal);
+}
+a:link {
+  text-decoration: none;
+  color: var(--corPrincipal);
 }
 nav ul li {
   color: var(--corPrincipal);
@@ -20,12 +23,13 @@ nav ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20em;
+  margin-bottom: 10em;
 }
 #sala > h1 {
   color: var(--corPrincipal);
   font-size: 3.5em;
   text-align: center;
+  text-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
 }
 #group-salas {
   width: 100%;
@@ -44,16 +48,16 @@ nav ul li {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(../../assets/img/wave.svg); 
+  background-image: url(../../assets/img/wave.svg);
   background-repeat: repeat-x;
-  animation: wave 30s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
 }
 .wave:nth-of-type(2) {
- background-image: url(../../assets/img/wave.svg); 
+  background-image: url(../../assets/img/wave.svg);
   background-repeat: repeat-x;
-  animation: wave 37s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
-    /* swell 7s ease -1.25s infinite; */
+  animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
+  /* swell 7s ease -1.25s infinite; */
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
@@ -77,4 +81,93 @@ nav ul li {
     -webkit-transform: translate3d(0, 5px, 0);
     transform: translate3d(0, 5px, 0);
   }
+}
+
+/* CRIAR SALAS  */
+
+#criarSala {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8em;
+}
+#criarSala > h1 {
+  color: var(--corPrincipal);
+  font-size: 3.5em;
+  text-align: center;
+  text-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+}
+
+#salaIn {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8em;
+}
+
+#salaIn > h1 {
+  color: var(--corPrincipal);
+  font-size: 3.5em;
+  text-align: center;
+  text-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+}
+#layer-btn {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+  
+}
+
+#layer-btn a {
+  font-weight: 500;
+  /* padding: 0em 2em 0em 2em; */
+  box-sizing: border-box;
+  border-bottom: var(--corCinza) solid 2px;
+  color: var(--corCinza);
+  width: 8em;
+  text-align: center;
+  transition: width 0.2s ;
+}
+
+#layer-btn a:hover {
+  width: 10em;
+  color: var(--corPrincipal);
+  border-bottom: var(--corPrincipal) solid 2px;
+}
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: 400;
+  color: white;
+  background-color: rgb(255, 56, 96);
+}
+
+tbody tr td {
+  text-align: center;
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+}
+tbody tr td:last-child,
+tbody tr td:nth-last-child(2) {
+  color: blue;
+}
+
+tbody i {
+  color: var(--corPrincipal);
+  cursor: pointer;
+}
+.editarEvento {
+  background-color: var(--corPrincipal);
+  color: white;
 }

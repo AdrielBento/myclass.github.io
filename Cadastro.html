@@ -9,30 +9,43 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <title>MyClass</title>
+
+
+    <style>
+        nav {
+            position: absolute;
+        }
+
+        a:visited {
+            color: white !important;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: white !important;
+        }
+    </style>
 </head>
+
 
 <body>
     <nav class="nav-bar">
         <ul>
             <li class="logo">
-                <img src="assets/img/logo2.png" alt="logo">
+                <a href="index.html">
+                    <img src="assets/img/logobranca.svg" alt="logo">
+                </a>
             </li>
             <li>
-                <a href="">Home</a>
+                <a href="salas.html">Salas</a>
             </li>
-            <li>
-                <a href="">Sobre</a>
-            </li>
-            <li>
-                <a href="">Contato</a>
-            </li>
-
+            <li>Perfil</li>
         </ul>
 
         <a href="login.html">
             <button type="button" class="btn btn-media">
-                    <i class="fa fa-sign-in" aria-hidden="true"></i>
-                    Login
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                Login
             </button>
         </a>
 
@@ -44,9 +57,9 @@
         <section id="cadastro" class="sectionForm cadastro">
 
             <div class="container">
-                    <h1 class="title is-1">Cadastro</h1>
-                    <hr>
-                <form class="form" id="formCadastro">
+                <h1 class="title is-1">Cadastro</h1>
+                <hr>
+                <form class="form" id="formCadastro" action="cadastroBanco.php" method="POST">
 
                     <label for="password" class="labels">
                         <!-- <i class="fa fa-user" aria-hidden="true"></i>  -->

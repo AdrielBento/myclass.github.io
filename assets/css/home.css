@@ -63,39 +63,18 @@
   transition: 2ms;
 }
 
-#btn-busca:active {
-  border-bottom: rgb(255, 56, 96) solid 2px;
-}
 nav {
-  width: 100%;
-  /* height: 20%; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: 1em;
 }
-
-nav ul {
-  text-decoration: none;
-  list-style: none;
-  width: 50%;
-  height: auto;
-  margin: 0px;
-  display: flex;
-  align-items: center;
-}
-
 nav ul li {
-  display: inline-block;
-  margin: 0px;
-  height: 100%;
-  margin-left: 2em;
   color: white;
-  cursor: pointer;
-  font-weight: 500;
+}
+a:visited {
+  color: white;
+}
+a:link {
+  text-decoration: none;
+  color: white;
 }
 .logo {
   width: 5%;
@@ -124,19 +103,6 @@ header {
   );
 }
 
-#btn-logout {
-  outline: none;
-  color: white;
-  cursor: pointer;
-  border: 0em;
-  width: 10em;
-  height: 2em;
-  border-radius: 5em;
-  background-color: rgba(138, 80, 232, 0) !important;
-  margin-right: 1em;
-  font-weight: 500;
-  font-family: "Quicksand", sans-serif;
-}
 #salasBuscadas {
   width: 100%;
   height: auto;
@@ -147,47 +113,13 @@ header {
   width: 80%;
   height: 100%;
   display: flex;
-  /* flex-direction: column; */
   padding-top: 2em;
   align-items: center;
   padding-bottom: 5em;
   justify-content: space-around;
-}
-.cardSala {
-  width: 40%;
-  height: auto;
-  min-height: 5em;
-  color: white;
-  background-color: rgb(252, 91, 124);
-  border-radius: 2em;
-  border-bottom: rgb(255, 56, 96) solid 8px;
-  box-sizing: border-box;
-  padding: 0em 1em 1em 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
-  margin-top: 2em;
+  flex-wrap: wrap;
 }
 
-.infoSala {
-  display: flex;
-}
-.btn-entrar {
-  outline: none;
-  color: white;
-  cursor: pointer;
-  border: 0em;
-  width: 10em;
-  height: 2em;
-  border-radius: 5em;
-  background-color: rgb(245, 122, 149);
-  margin-top: 0.5em;
-}
-.cardSala h1 h6 {
-  text-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
-  /* text-shadow: 1.06066px 1.06066px 0 #2e95da, 2.12132px 2.12132px 0 #2892d9, 3.18198px 3.18198px 0 #268fd5; */
-}
 #linkCriarSala {
   width: 20%;
   height: 100%;
@@ -201,4 +133,8 @@ header {
   height: 2em;
   border-radius: 5em;
   background-color: rgb(240, 52, 96);
+}
+
+#btn-logout {
+  color: white;
 }
